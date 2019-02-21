@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Validate</title>
+    <link rel="stylesheet" type="text/css" href="slideshow.css">
+  </head>
+  <body>
+
+    <div id = "imageBox">
+      <img id = "picture" src = "images/andre.jpg" height="500" width="500" >
+    </div>
+    <button id = "prevIMG" onclick = "prevIMG()";> <- </button>
+    <button id = "nextIMG" onclick = "nextIMG()"> -> </button>
+
+    <script type = "text/javascript">
+        let index = 0;
+        let image = document.getElementById('picture');
+        let picList = ["images/andre.jpg", "images/koolaid.jpg", "images/johnhiggins.jpg", "images/water2.jpg", "images/switz.jpg"];
+
+        function nextIMG(){
+          if(index == picList.length-1){index = 0;}
+          else{index+=1;}
+
+          image.src = picList[index];
+          console.log(index);
+        }
+        function prevIMG(){
+          if(index == 0){index = picList.length-1;}
+          else{index-=1;}
+
+          image.src = picList[index];
+          console.log(index);
+        }
+
+    </script>
+  </body>
+
+</html>
