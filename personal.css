@@ -1,4 +1,26 @@
 body{
-  background-color: orange;
+  background-color: #f47142;
   text-align: center;
+}
+
+p.bio{
+  text-align: center;
+  font-family: Helvetica;
+  color: white;
+  font-size: 15pt;
+}
+
+.imageBox{
+  background-color: #eee;
+  display: flex;
+  height: 400px;
+  margin: 5px;
+  width: 260px;
+  background-image: url("images/tiernon.jpg");
+  border-radius: 25px;
+  border-bottom-color: black;
+}
+
+a:hover{
+  color: red;
 }
