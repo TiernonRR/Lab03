@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Manipulate</title>
+    
+  </head>
+  <body>
+      <p id = "para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi suscipit quam nisi, vel sollicitudin augue tempor at. Nam bibendum arcu vel augue tristique, ut aliquet turpis tincidunt. Ut non pulvinar lectus. Curabitur semper interdum ipsum id fringilla. Nam a eleifend ex, consequat finibus turpis. Cras eget nisl ac tellus vehicula condimentum id nec quam. Vivamus id est efficitur, sollicitudin magna eget, ornare nibh. Vivamus vulputate nec lacus eget ullamcorper. Sed eget ante id nunc lacinia eleifend. Etiam non magna fringilla, iaculis eros nec, convallis lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque a volutpat massa. Donec cursus facilisis sem, eget tincidunt leo fringilla vel. Cras nec ipsum quis enim convallis tincidunt sit amet molestie urna.</p>
+      <center>
+          <form onsubmit="change()">
+            <input placeholder = "Border red value" type="number" id = "red_val" ><br>
+            <input placeholder = "Border green value" type="number" id = "gre_val"><br>
+            <input placeholder = "Border blue value" type="number" id = "blu_val"><br>
+            <input placeholder = "Border width value" type="number" id = "width"><br>
+            <br><br>
+            <input placeholder = "Background red value" type="number" id = "red_val_back"><br>
+            <input placeholder = "Background green value" type="number" id = "gre_val_back"><br>
+            <input placeholder = "Background blue value" type="number" id = "red_val_back"><br>
+            <button text = "Submit" type = "submit">Update</button>
+          </form>
+      </center>
+      <script type = "text/javascript">
+        function change(){
+          let redValue_border       = document.getElementById("red_val").value;
+          let greenValue_border     = document.getElementById("gre_val").value;
+          let blueValue_border      = document.getElementById("blu_val").value;
+
+          let redValue_background   = document.getElementById("red_val_back").value;
+          let greenValue_background = document.getElementById("gre_val_back").value;
+          let blueValue_background  = document.getElementById("blu_val_back").value;
+  
+          let borderWidth           = document.getElementById("width").value;
+          let paragraph             = document.getElementById("para");
+          let rgb = rgb(redValue_background,greenValue_background,blueValue_background);
+          document.body.style.backgroundColor = rgb;
+  
+        }
+      </script>
+    </body>
+
+</html>
