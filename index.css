@@ -1,0 +1,29 @@
+h1{
+    font-family: Helvetica;
+}
+
+a:hover{
+    color: red;
+}
+
+#links{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    margin-top: -50px;
+    margin-left: -50px;
+    background-color: #e9eaa4;
+    border-radius: 25px;
+    width: 300px;
+    border: black solid;
+    color: white;
+}
+
+body{
+    background-image: url(images/background.jpg);
+}
+
+p{
+    font-family: Helvetica;
+    font-display: 20px;
+}
